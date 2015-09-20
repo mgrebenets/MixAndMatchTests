@@ -1,0 +1,8 @@
+build/
+derived-data/
+coverage.info
+gcov-report.xml
+lcov-reports/
+.gutter.json
+build-settings.txt
+slather-report/

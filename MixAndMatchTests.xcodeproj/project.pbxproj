@@ -15,6 +15,12 @@
 		ED3B0CEC1BAEE3A800386484 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED3B0CEB1BAEE3A800386484 /* Images.xcassets */; };
 		ED3B0CEF1BAEE3A900386484 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3B0CED1BAEE3A900386484 /* LaunchScreen.xib */; };
 		ED3B0CFB1BAEE3A900386484 /* MixAndMatchTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3B0CFA1BAEE3A900386484 /* MixAndMatchTestsTests.m */; };
+		ED3B0D071BAEE3E900386484 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B0D061BAEE3E900386484 /* Model.swift */; };
+		ED3B0D081BAEE3E900386484 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B0D061BAEE3E900386484 /* Model.swift */; };
+		ED3B0D0D1BAEE44000386484 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B0D0C1BAEE44000386484 /* ModelTests.swift */; };
+		ED3B0D101BAEE5E600386484 /* XCTestCase+GCovFlush.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3B0D0F1BAEE5E600386484 /* XCTestCase+GCovFlush.m */; };
+		EDAA5E471BAF6539004A07D8 /* ObjCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAA5E461BAF6539004A07D8 /* ObjCModel.m */; };
+		EDAA5E481BAF6539004A07D8 /* ObjCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAA5E461BAF6539004A07D8 /* ObjCModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,13 @@
 		ED3B0CF41BAEE3A900386484 /* MixAndMatchTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixAndMatchTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3B0CF91BAEE3A900386484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED3B0CFA1BAEE3A900386484 /* MixAndMatchTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixAndMatchTestsTests.m; sourceTree = "<group>"; };
+		ED3B0D041BAEE3E800386484 /* MixAndMatchTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixAndMatchTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED3B0D051BAEE3E800386484 /* MixAndMatchTestsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MixAndMatchTestsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED3B0D061BAEE3E900386484 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ED3B0D0C1BAEE44000386484 /* ModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		ED3B0D0F1BAEE5E600386484 /* XCTestCase+GCovFlush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XCTestCase+GCovFlush.m"; sourceTree = "<group>"; };
+		EDAA5E451BAF6539004A07D8 /* ObjCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCModel.h; sourceTree = "<group>"; };
+		EDAA5E461BAF6539004A07D8 /* ObjCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +103,15 @@
 				ED3B0CE31BAEE3A800386484 /* MasterViewController.m */,
 				ED3B0CE51BAEE3A800386484 /* DetailViewController.h */,
 				ED3B0CE61BAEE3A800386484 /* DetailViewController.m */,
+				ED3B0D061BAEE3E900386484 /* Model.swift */,
+				EDAA5E451BAF6539004A07D8 /* ObjCModel.h */,
+				EDAA5E461BAF6539004A07D8 /* ObjCModel.m */,
 				ED3B0CE81BAEE3A800386484 /* Main.storyboard */,
 				ED3B0CEB1BAEE3A800386484 /* Images.xcassets */,
 				ED3B0CED1BAEE3A900386484 /* LaunchScreen.xib */,
 				ED3B0CDB1BAEE3A800386484 /* Supporting Files */,
+				ED3B0D041BAEE3E800386484 /* MixAndMatchTests-Bridging-Header.h */,
+				ED3B0D051BAEE3E800386484 /* MixAndMatchTestsTests-Bridging-Header.h */,
 			);
 			path = MixAndMatchTests;
 			sourceTree = "<group>";
@@ -111,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				ED3B0CFA1BAEE3A900386484 /* MixAndMatchTestsTests.m */,
+				ED3B0D0C1BAEE44000386484 /* ModelTests.swift */,
+				ED3B0D0F1BAEE5E600386484 /* XCTestCase+GCovFlush.m */,
 				ED3B0CF81BAEE3A900386484 /* Supporting Files */,
 			);
 			path = MixAndMatchTestsTests;
@@ -168,6 +188,7 @@
 		ED3B0CD01BAEE3A800386484 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Maksym Grebenets";
 				TargetAttributes = {
@@ -224,10 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3B0D071BAEE3E900386484 /* Model.swift in Sources */,
 				ED3B0CE11BAEE3A800386484 /* AppDelegate.m in Sources */,
 				ED3B0CE41BAEE3A800386484 /* MasterViewController.m in Sources */,
 				ED3B0CDE1BAEE3A800386484 /* main.m in Sources */,
 				ED3B0CE71BAEE3A800386484 /* DetailViewController.m in Sources */,
+				EDAA5E471BAF6539004A07D8 /* ObjCModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3B0D0D1BAEE44000386484 /* ModelTests.swift in Sources */,
 				ED3B0CFB1BAEE3A900386484 /* MixAndMatchTestsTests.m in Sources */,
+				ED3B0D081BAEE3E900386484 /* Model.swift in Sources */,
+				EDAA5E481BAF6539004A07D8 /* ObjCModel.m in Sources */,
+				ED3B0D101BAEE5E600386484 /* XCTestCase+GCovFlush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,9 +382,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MixAndMatchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixAndMatchTests/MixAndMatchTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -365,9 +395,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MixAndMatchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixAndMatchTests/MixAndMatchTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -375,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -386,6 +419,8 @@
 				INFOPLIST_FILE = MixAndMatchTestsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixAndMatchTests/MixAndMatchTestsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixAndMatchTests.app/MixAndMatchTests";
 			};
 			name = Debug;
@@ -394,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -401,6 +437,7 @@
 				INFOPLIST_FILE = MixAndMatchTestsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixAndMatchTests/MixAndMatchTestsTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MixAndMatchTests.app/MixAndMatchTests";
 			};
 			name = Release;
@@ -424,6 +461,7 @@
 				ED3B0D001BAEE3A900386484 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED3B0D011BAEE3A900386484 /* Build configuration list for PBXNativeTarget "MixAndMatchTestsTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +470,7 @@
 				ED3B0D031BAEE3A900386484 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
+#import "ObjCModel.h"
+#import "MixAndMatchTestsTests-Swift.h"
+
 @interface MixAndMatchTestsTests : XCTestCase
 
 @end
@@ -35,6 +38,18 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+- (void)testSwiftModel {
+    Model *model = [[Model alloc] init];
+    [model method];
+    XCTAssert(YES, @"Pass");
+}
+
+- (void)testObjCModel {
+    ObjCModel *model = [[ObjCModel alloc] init];
+    [model method:@"test-from-objc"];
+    XCTAssert(YES, @"Pass");    
 }
 
 @end
