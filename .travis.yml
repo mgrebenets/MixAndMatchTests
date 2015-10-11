@@ -13,6 +13,6 @@ osx_image: xcode7
 install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
-  - set -o pipefail && xcodebuild test -project MixAndMatchTests.xcodeproj -scheme MixAndMatchTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+  - set -o pipefail && xcodebuild test -project MixAndMatchTests.xcodeproj -scheme MixAndMatchTests -sdk iphonesimulator -enableCodeCoverage YES ONLY_ACTIVE_ARCH=NO | xcpretty -c
 after_success:
   - bash <(curl -s https://codecov.io/bash)

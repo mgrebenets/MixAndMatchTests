@@ -3,8 +3,7 @@ Code Coverage Reports for Xcode Project
 _Mix and match containing both Objective-C and Swift_
 
 [![CI Status](http://img.shields.io/travis/mgrebenets/MixAndMatchTests.svg?style=flat)](https://travis-ci.org/mgrebenets/MixAndMatchTests)
-
-[@codecov][2]
+[![codecov.io](http://codecov.io/github/mgrebenets/MixAndMatchTests/coverage.svg?branch=master)](http://codecov.io/github/mgrebenets/MixAndMatchTests?branch=master)
 
 This is a sample repository that demonstrates getting the code coverage reports out of Xocde using command line.
 
@@ -62,6 +61,4 @@ This script will run the tests using new `-enableCodeCoverage` option of `xcodeb
 Collect code coverage data in Profdata format and convert to gcov format (Cobertura-compatible). Output is saved to `slather-report` folder.
 more notes for blog post
 
-[1]: https://codecov.io/
-[2]: https://twitter.com/codecov
 
