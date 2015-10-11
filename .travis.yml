@@ -1,0 +1,18 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+language: objective-c
+osx_image: xcode7
+# cache: cocoapods
+# podfile: Example/Podfile
+#before_install:
+# - pip install codecov
+# - gem install cocoapods # Since Travis is not always on latest version
+# - pod install --project-directory=Example
+install:
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+script:
+  - set -o pipefail && xcodebuild test -project MixAndMatchTests.xcodeproj -scheme MixAndMatchTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
