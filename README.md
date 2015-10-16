@@ -7,6 +7,8 @@ _Mix and match containing both Objective-C and Swift_
 
 This is a sample repository that demonstrates getting the code coverage reports out of Xocde using command line.
 
+See [this blog post](http://mgrebenets.github.io/mobile%20ci/2015/09/21/code-coverage-for-ios-xcode-7/) for more details.
+
 # Switching Xcode
 If you want to experiment with both Xcode 6 and 7, make sure you switch Xcode version.
 For temporary effect that applies to current shell session only, use `DEVELOPER_DIR` environment variable.
@@ -60,5 +62,3 @@ This script will run the tests using new `-enableCodeCoverage` option of `xcodeb
 ## slather.sh
 Collect code coverage data in Profdata format and convert to gcov format (Cobertura-compatible). Output is saved to `slather-report` folder.
 more notes for blog post
-
-
