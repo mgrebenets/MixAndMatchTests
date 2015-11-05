@@ -10,7 +10,12 @@
 #import <XCTest/XCTest.h>
 
 #import "ObjCModel.h"
-#import "MixAndMatchTestsTests-Swift.h"
+
+// If you'd ever want to test Swift classes with Objective-C code
+// You have to add those Swift classes to unit tests target and import Swift umbrella header
+//#import "MixAndMatchTestsTests-Swift.h"
+// But then you will get no coverage for that Swift class
+// So the solution is: test Swift with Swift
 
 @interface MixAndMatchTestsTests : XCTestCase
 
@@ -38,12 +43,6 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
-}
-
-- (void)testSwiftModel {
-    Model *model = [[Model alloc] init];
-    [model method];
-    XCTAssert(YES, @"Pass");
 }
 
 - (void)testObjCModel {

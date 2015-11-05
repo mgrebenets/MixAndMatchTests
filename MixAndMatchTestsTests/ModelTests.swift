@@ -9,6 +9,8 @@
 import UIKit
 import XCTest
 
+@testable import MixAndMatchTests
+
 class ModelTests: XCTestCase {
 
     func testModel() {

@@ -16,11 +16,10 @@
 		ED3B0CEF1BAEE3A900386484 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED3B0CED1BAEE3A900386484 /* LaunchScreen.xib */; };
 		ED3B0CFB1BAEE3A900386484 /* MixAndMatchTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3B0CFA1BAEE3A900386484 /* MixAndMatchTestsTests.m */; };
 		ED3B0D071BAEE3E900386484 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B0D061BAEE3E900386484 /* Model.swift */; };
-		ED3B0D081BAEE3E900386484 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B0D061BAEE3E900386484 /* Model.swift */; };
 		ED3B0D0D1BAEE44000386484 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B0D0C1BAEE44000386484 /* ModelTests.swift */; };
 		ED3B0D101BAEE5E600386484 /* XCTestCase+GCovFlush.m in Sources */ = {isa = PBXBuildFile; fileRef = ED3B0D0F1BAEE5E600386484 /* XCTestCase+GCovFlush.m */; };
+		ED76B1BB1BEAE62B00192F14 /* ObjCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAA5E461BAF6539004A07D8 /* ObjCModel.m */; };
 		EDAA5E471BAF6539004A07D8 /* ObjCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAA5E461BAF6539004A07D8 /* ObjCModel.m */; };
-		EDAA5E481BAF6539004A07D8 /* ObjCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAA5E461BAF6539004A07D8 /* ObjCModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -259,9 +258,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED3B0D0D1BAEE44000386484 /* ModelTests.swift in Sources */,
+				ED76B1BB1BEAE62B00192F14 /* ObjCModel.m in Sources */,
 				ED3B0CFB1BAEE3A900386484 /* MixAndMatchTestsTests.m in Sources */,
-				ED3B0D081BAEE3E900386484 /* Model.swift in Sources */,
-				EDAA5E481BAF6539004A07D8 /* ObjCModel.m in Sources */,
 				ED3B0D101BAEE5E600386484 /* XCTestCase+GCovFlush.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = MixAndMatchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = MixAndMatchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
