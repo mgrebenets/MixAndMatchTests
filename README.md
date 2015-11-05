@@ -61,4 +61,3 @@ This script will run the tests using new `-enableCodeCoverage` option of `xcodeb
 
 ## slather.sh
 Collect code coverage data in Profdata format and convert to gcov format (Cobertura-compatible). Output is saved to `slather-report` folder.
-more notes for blog post
