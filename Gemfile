@@ -1,2 +1,2 @@
 source 'https://rubygems.org'
-gem 'slather', :git => "https://github.com/mattdelves/slather.git", :branch => "feature-profdata"
+gem 'slather', :git => "https://github.com/viteinfinite/slather.git", :branch => "feature-profdata"
