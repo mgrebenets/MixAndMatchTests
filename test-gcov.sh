@@ -12,6 +12,7 @@ xcodebuild test \
     -project ${PROJECT} \
     -scheme ${SCHEME} \
     -sdk iphonesimulator \
+    -destination "name=iPhone 6 Plus" \
     -configuration Debug \
     CONFIGURATION_BUILD_DIR=${BUILD_DIR} \
     OBJROOT=${BUILD_DIR} \

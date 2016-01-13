@@ -1,29 +1,13 @@
 SCHEME=MixAndMatchTests
 PROJECT=${SCHEME}.xcodeproj
+FORMAT="$1"
 
-# Cobertura
+[[ -z "${FORMAT}" ]] && echo "usage: slather.sh covertura-xml|simple-output|html" && exit 2
+
 bundle exec slather coverage \
     --input-format profdata \
-    --cobertura-xml \
+    --${FORMAT} \
     --ignore "../**/*/Xcode*" \
     --output-directory slather-report \
     --scheme ${SCHEME} \
     ${PROJECT}
-
-# Simple
-bundle exec slather coverage \
-    --input-format profdata \
-    --simple-output \
-    --ignore "../**/*/Xcode*" \
-    --output-directory slather-report \
-    --scheme ${SCHEME} \
-    ${PROJECT}
-
-# HTML option is broken at the time of trying this
-# bundle exec slather coverage \
-#     --input-format profdata \
-#     --html \
-#     --ignore "../**/*/Xcode*" \
-#     --output-directory slather-html-report \
-#     --scheme ${SCHEME} \
-#     ${PROJECT}

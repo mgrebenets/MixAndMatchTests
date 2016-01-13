@@ -14,5 +14,6 @@ xcodebuild ${CLEAN} test \
     -project ${PROJECT}\
     -scheme ${SCHEME} \
     -sdk iphonesimulator \
+    -destination "name=iPhone 6 Plus" \
     -configuration Debug \
     -enableCodeCoverage YES
