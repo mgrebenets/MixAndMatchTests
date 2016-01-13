@@ -6,3 +6,6 @@ lcov-reports/
 .gutter.json
 build-settings.txt
 slather-report/
+*.gcda
+*.gcno
+
