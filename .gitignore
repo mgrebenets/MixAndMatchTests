@@ -8,4 +8,7 @@ build-settings.txt
 slather-report/
 *.gcda
 *.gcno
+report.xml
+test_output/
+
 
